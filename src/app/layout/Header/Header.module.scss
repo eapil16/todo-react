@@ -1,0 +1,20 @@
+.header {
+    padding: 12px 0px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    background: #6e6e6e;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.headerBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        margin: 0;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
