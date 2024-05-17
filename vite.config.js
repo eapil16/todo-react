@@ -14,6 +14,7 @@ export default defineConfig({
             '@layout': new URL('./src/app/layout', import.meta.url).pathname,
             '@assets': new URL('./src/assets', import.meta.url).pathname,
             '@app': new URL('./src/app', import.meta.url).pathname,
+            '@services': new URL('./src/services', import.meta.url).pathname,
         },
     },
     plugins: [react()],

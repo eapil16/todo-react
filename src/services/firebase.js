@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { initializeApp } from "firebase/app";
-import { getFirestore } from 'firebase/firestore';
+import { getAuth } from 'firebase/auth';
+import { getDatabase } from 'firebase/database';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_APP_API_KEY,
@@ -13,6 +14,15 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const auth = getAuth(app);
+const database = getDatabase(app);
 
-export default db;
+export { auth, database };
+
+
+
+
+
+
+
+
